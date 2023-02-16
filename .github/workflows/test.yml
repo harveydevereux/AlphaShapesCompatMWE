@@ -40,4 +40,4 @@ jobs:
             ${{ runner.os }}-
       - uses: julia-actions/julia-buildpkg@v1
       - name: create package
-        run: julia -e "using Pkg; Pkg.generate(\"test\"); Pkg.activate(\"test\"); Pkg.add(Pkg.PackageSpec(name=\"Distributions\",version=\"0.25\")); Pkg.add(\"AlphaShapes\")"
+        run: julia -e "using Pkg;Pkg.generate(\"test\"); Pkg.activate(\"test\"); Pkg.add(Pkg.PackageSpec(name=\"Distributions\",version=\"0.25\")); Pkg.add(\"AlphaShapes\")"
